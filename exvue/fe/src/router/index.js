@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/home.vue'
 import Test from '../views/test.vue'
 import Room from '../views/room.vue'
+import RoomDetail from '../views/roomDetail.vue'
 import Reserve from '../views/reserve.vue'
 import Search from '../views/search.vue'
 import SignIn from '../views/signin.vue'
@@ -22,6 +23,11 @@ const routes = [
     path: '/room',
     name: 'room',
     component: Room
+  },
+  {
+    path: '/room/:id',
+    name: 'roomDetail',
+    component: RoomDetail
   },
   {
     path: '/reserve',

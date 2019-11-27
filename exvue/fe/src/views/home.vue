@@ -7,8 +7,8 @@
         style="overflow:scroll;"
         height=300px;>
       <ul style="list-sylte:none;padding-left:0px;">
-        <li v-for="item in items" :key="item" style="float:left">
-          <room-frame ></room-frame>
+        <li v-for="item in houseImgs" :key="item" style="float:left">
+          <room-frame v-bind:_id=item._id v-bind:src="item.image[0]" v-bind:detail="item.description"></room-frame>
         </li>
       </ul>
 
@@ -27,10 +27,20 @@ export default {
     RoomFrame
   },
   data(){
-    var arrNumber = new Array();
-    for (var i =0 ; i<100; i++)
-      arrNumber[i] =i;
-    return {items:arrNumber};
-  }
+    return {
+      items:new Array(),
+      houseImgs: []
+      };
+  },
+  created() {
+    //this.arrNumber = new Array();
+    for (var i =0 ; i<30; i++)
+      this.items[i] =i;
+    
+    this.$http.get('/api/sharehouse')
+              .then((response) => {
+                this.houseImgs = response.data
+              })
+  },
 }
 </script>
