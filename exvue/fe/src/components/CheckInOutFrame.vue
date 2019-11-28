@@ -36,7 +36,7 @@
                   <v-btn
                     text
                     color="primary"
-                    @click="    ()"
+                    @click="DateHandling()"
                   >OK</v-btn>
                 </v-date-picker>
               </v-menu>
