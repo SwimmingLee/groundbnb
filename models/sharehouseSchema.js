@@ -6,14 +6,16 @@ var ShareHouseSchema = new mongoose.Schema({
     schedule: [{type:mongoose.Schema.Types.ObjectId, ref:'schedule'}],
     price: {type: Number, required: true},
     personCapa: {type: Number, required: true},
+    title: String,
     description: {type: String, required: true},
-    rule: String,
+    rule: [String],
+    host: mongoose.Schema.Types.ObjectId,
     facilities: {
         roomCnt: Number,
         bathCnt: Number,
         bedCnt: Number,
         kitchenCnt: Number,
-        etc: String
+        etc: [String]
     },
     location: {
         latitude: Number,

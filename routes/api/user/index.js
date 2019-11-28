@@ -10,6 +10,8 @@ router.route('/:userId')
     .get(userModel.getUserById)
     .delete(userModel.deleteUserById)
     .put(userModel.updateUser)
+router.route('/login')
+    .post(userModel.login)
 
 module.exports = router;
 

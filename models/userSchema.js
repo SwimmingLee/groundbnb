@@ -10,12 +10,14 @@ var UserSchema = new mongoose.Schema({
     nickName: String,
     age: Number,
     email: String,
-    address: String, 
+    address: String,
+    introduction: String 
+    
 })
 
 UserSchema.statics.create = function(user){
  
-    const {userId, userPwd, userThumbnail, nickName, age, email, address} = user;
+    const {userId, userPwd, userThumbnail, nickName, age, email, address, introduction} = user;
 
     const encrypted = crypto.createHmac('sha1', process.env.JWT_SECRET)
                             .update(userPwd)
@@ -29,6 +31,7 @@ UserSchema.statics.create = function(user){
         age,
         email,
         address,
+        introduction
     })
 
     return newUser.save();
@@ -42,11 +45,11 @@ UserSchema.statics.findOneByUserID = function(userId) {
 
 
 UserSchema.methods.verify = function(password) {
+    
     const encrypted = crypto.createHmac('sha1', process.env.JWT_SECRET)
                             .update(password)
                             .digest('base64')
-
-    return this.password === encrypted;
+    return this.userPwd === encrypted;
 }
 
 

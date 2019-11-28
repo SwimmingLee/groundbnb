@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var UserModel = require('../models/userSchema');
 var jwt = require('jsonwebtoken');
-
+var fs = require('fs');
 
 exports.addUser = function(req, res) {
     const {userId} = req.body;
@@ -41,13 +41,14 @@ exports.getAlluser = (req, res) => {
 
 
 exports.login = (req, res) => {
-    const {userId, userPwd} = req.body;
-    
+    const {userId, userPwd} = req.body.params;
     const check = (user) => {
+
         if(!user) {
             throw new Error('login falied');
         } else{
             if (user.verify(userPwd)) {
+        
                 const p = new Promise((resolve, reject) => {
                     jwt.sign(
                         {
@@ -64,7 +65,7 @@ exports.login = (req, res) => {
                             resolve(token);
                         }
                     )
-                })
+                })  
                 return p;
             } else {
                 res.send('login-failed');
@@ -76,6 +77,7 @@ exports.login = (req, res) => {
     const respond = (token) => {
         res.json({
             message: 'logged in successfully',
+            token
         })
     }
 
@@ -114,4 +116,21 @@ exports.updateUser = function(req, res) {
             return res.json(data);
         }
     )
+}
+
+
+exports.importdummy = (req, res) => {
+    try {
+        //const path1 = 'C:\Users\Lee\workspace\groundbnb\groundbnb\dummy_user.json'
+        const path = './dummy_user.json'
+        const jsonString = fs.readFileSync(path)
+        const customer = JSON.parse(jsonString)
+        //console.log(customer)
+        for (var idx in customer){
+            UserModel.create(customer[idx]);
+        }
+      } catch(err) {
+        console.log(err)
+        return res.json(err);
+      }
 }
