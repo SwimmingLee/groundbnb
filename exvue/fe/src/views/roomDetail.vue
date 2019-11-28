@@ -12,7 +12,6 @@
     <div class="left" style="display:inline-block">
       <room-desc-frame v-bind:facilities="room.facilities" v-bind:description="room.description"></room-desc-frame>
       <review-set-frame></review-set-frame>
-      <map-frame v-bind:location="room.location"></map-frame>
     </div>
     <div class="right" style="display:inline-block">
       <map-frame v-bind:location="room.location"></map-frame>
