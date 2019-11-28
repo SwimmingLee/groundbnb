@@ -15,6 +15,7 @@
       <map-frame v-bind:location="room.location"></map-frame>
     </div>
     <div class="right" style="display:inline-block">
+      <map-frame v-bind:location="room.location"></map-frame>
       <host-frame></host-frame>
       <room-book-frame v-bind:_id="$route.params.id" v-bind:price="room.price"></room-book-frame>
     </div>

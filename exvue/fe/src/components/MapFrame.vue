@@ -13,7 +13,7 @@
    fullscreenControl: true,
    disableDefaultUi: false
    }"
-      :center="{lat:10,lng:10}"
+      :center="{lat:36.8151,lng:127.1139}"
       :zoom="15"
       map-type-id="terrain"
       style="width: 500px; height: 300px"
