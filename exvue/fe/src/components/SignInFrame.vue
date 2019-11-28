@@ -3,18 +3,20 @@
          <v-form v-model="valid" >
             <v-container width=200 height=500>
                 <v-row  width=200>
-                    <v-text-field>
+                    <span>ID</span>
+                    <v-text-field width=100 v-model="userID">
                         id
                     </v-text-field>
                 </v-row>
                 <v-row>
-                    <v-text-field width=300>
+                    <span>PASSWORD</span>
+                    <v-text-field width=100 v-model="userPWD">
                         password
                     </v-text-field>
                 </v-row>
                 <v-row>
                     <v-col align="center"> 
-                        <v-btn>로그인</v-btn>
+                        <v-btn v-on:click="login">로그인</v-btn>
                     </v-col>
                 </v-row>
             </v-container>
@@ -39,7 +41,31 @@
 <script>
 //import  from '@/components/';
 export default {
-    name : "SignInFrame"
+    name : "SignInFrame",
+    data() {
+        return {
+            userID:{},
+            userPWD:{},
+            token: {},
+        }
+    },
+    methods: {
+        login: function() {
+            this.$http.post('/api/user/login', {
+            params: {
+                userId: this.userID,
+                userPwd: this.userPWD
+            }
+        })
+              .then((response) => {
+                this.token = response.data.token;
+                this.$cookie.set('login_token',this.token, 1);
+                this.$router.push("/");
+              })
+        }
+    },
+    created() { 
+    },
 };
 </script>
 
