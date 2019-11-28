@@ -2,11 +2,21 @@
     <div class="roomDescFrame">
         <v-sheet>
             <h2>집 설명</h2>
-            증말 좋은 집입니다
+            {{description}}
         </v-sheet>
         <v-sheet>
             <h2>편의시설</h2>
-            편의시설도 많습니다
+            <ul>
+                <li>
+                    방 : {{facilities.roomCnt}}개
+                </li>
+                <li>
+                    욕실 : {{facilities.bathCnt}}개
+                </li>
+                <li>
+                    침실 : {{facilities.bedCnt}}개
+                </li>
+            </ul>
         </v-sheet>
         <v-sheet>
             <h2>이용규칙</h2>
@@ -28,7 +38,8 @@
 
 <script>
 export default {
-    name : "RoomDescFrame"
+    name : "RoomDescFrame",
+    props : ['facilities','description']
 };
 </script>
 

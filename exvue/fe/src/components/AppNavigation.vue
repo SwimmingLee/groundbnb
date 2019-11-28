@@ -6,8 +6,12 @@
             <v-img src="@/assets/logo.png" max-width=50></v-img>
             </a>
             <v-spacer></v-spacer>
+            <a v-bind:href="'/signin'">
             <v-btn flat>SIGN IN</v-btn>
+            </a>
+            <a v-bind:href="'/signup'">
             <v-btn color="brown lighten-3">JOIN</v-btn>
+            </a>
     </v-toolbar>
 </template>
 

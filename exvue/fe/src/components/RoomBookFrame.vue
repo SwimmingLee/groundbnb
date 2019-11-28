@@ -8,9 +8,9 @@
         </v-sheet>
         
         <div class="searchButton">
-            지금 예약하시면 20000원/1일 부터~
-            <a v-bind:href="/reserve/">
-            <v-btn >예약</v-btn>
+            지금 예약하시면 {{price}}원/1일 부터~
+            <a v-bind:href="'/reserve/' + _id">
+                <v-btn >예약</v-btn>
             </a>
         </div>
     </div>
@@ -18,7 +18,8 @@
 
 <script>
 export default {
-    name : "RoomBookFrame"
+    name : "RoomBookFrame",
+    props: ['_id','price']
 };
 </script>
 

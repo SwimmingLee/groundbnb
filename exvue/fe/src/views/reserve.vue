@@ -31,7 +31,14 @@ export default {
         StepperFrame,
         ReserveInfoFrame,
         ReserveSubFrame
-    }
+    },
+    created() {
+      var path = '/api/sharehouse/' + this.$route.params.id
+      this.$http.get(path)
+              .then((response) => {
+                this.room = response.data;
+              })
+    },
 };
 </script>
 

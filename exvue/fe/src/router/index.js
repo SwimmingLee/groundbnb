@@ -5,6 +5,7 @@ import Home from '../views/home.vue'
 import Test from '../views/test.vue'
 import Room from '../views/room.vue'
 import RoomDetail from '../views/roomDetail.vue'
+import ReserveComplete from '../views/reservecomplete.vue'
 import Reserve from '../views/reserve.vue'
 import Search from '../views/search.vue'
 import SignIn from '../views/signin.vue'
@@ -30,7 +31,12 @@ const routes = [
     component: RoomDetail
   },
   {
-    path: '/reserve',
+    path: '/reserve/complete',
+    name: 'reservecomplete',
+    component: ReserveComplete
+  },
+  {
+    path: '/reserve/:id',
     name: 'reserve',
     component: Reserve
   },

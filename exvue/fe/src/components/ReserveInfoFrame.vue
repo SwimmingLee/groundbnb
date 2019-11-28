@@ -26,12 +26,11 @@
             <div class="schedule">
                 <div style="display:inline-block">
                     체크인 
-                    <v-input>{{date}}</v-input>
+                    <v-input>{{trip.start}}</v-input>
                 </div>
                 <div style="display:inline-block">
                 체크아웃
-                <v-input
-                    :messages="['YYYYMMDD']"></v-input>
+                <v-input>{{trip.end}}</v-input>
                 </div>
             </div>
         </v-row>
@@ -59,7 +58,7 @@
             <h3>요금 정보</h3>
         </v-row>
         <v-row>
-            숙박비
+            숙박비 
             <br>청소비
             <br>수수료
     
@@ -74,6 +73,7 @@
 <script>
 import HostFrameMini from '@/components/HostFrameMini';
 import HostFrame from '@/components/HostFrame';
+
 export default {
     name : "ReserveInfoFrame",
     conponents :{
@@ -86,8 +86,8 @@ export default {
         }
     },
     computed: {
-        date() {
-            return this.$store.state.trip;
+        trip() {
+            return this.$store.getters.trip
         }
     },
 };

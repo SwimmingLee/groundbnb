@@ -36,7 +36,7 @@
                   <v-btn
                     text
                     color="primary"
-                    @click="DateHandling()"
+                    @click="$refs.startMenu.save(date)"
                   >OK</v-btn>
                 </v-date-picker>
               </v-menu>
@@ -75,7 +75,7 @@
                   <v-btn
                     text
                     color="primary"
-                    @click="DateHandling()"
+                    @click="$refs.endMenu.save(date)"
                   >
                     OK
                   </v-btn>
@@ -88,25 +88,22 @@
 </template>
 
 <script>
-//import  from '@/components/';
+
 export default {
     name : "CheckInOutFrame",
+    component:{
+
+    },
     data(){
         return{
             date: null,
-            trip: {
-                start: null,
-                end: null,
-            }
         }   
     },
-    methods: {
-        DateHandling: ()=>{
-            this.$store.state.trip = this.trip;
-            this.$emit('date-handle')
-            this.$refs.endMenu.save(this.date);
-        }
-    },
+    computed: {
+      trip() {
+        return this.$store.getters.trip;
+      }
+    }
 };
 </script>
 

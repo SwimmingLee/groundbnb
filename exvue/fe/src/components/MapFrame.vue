@@ -1,6 +1,7 @@
 
 <template>
   <div>
+    <h2>지도</h2>
     <div class="google-map" ref="googleMap"></div>
     <GmapMap
       :options="{
@@ -12,7 +13,7 @@
    fullscreenControl: true,
    disableDefaultUi: false
    }"
-      :center="{lat:10, lng:10}"
+      :center="{lat:10,lng:10}"
       :zoom="15"
       map-type-id="terrain"
       style="width: 500px; height: 300px"
@@ -40,6 +41,8 @@ export default {
 
   data() {
     return {
+      lati:location.latitude,
+      lngi:location.longitude
     }
   },
 }

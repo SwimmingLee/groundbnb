@@ -1,21 +1,22 @@
 <template>
   <div>
     <div class="roomInfo">
-      <h1>호산나하숙 아늑한 31층방</h1>
+      {{room}}
+      <h1>{{room.description}}</h1>
       {{room.location.address}}
-      <p><v-icon color="warning">mdi-star</v-icon>4.96</p>
+      <p><v-icon color="warning">mdi-star</v-icon>{{room.comment.userRating}}</p>
     <div class="roomPic" >
       <v-img v-bind:src="room.image[0]" height=320>  
       </v-img>
     </div>
     <div class="left" style="display:inline-block">
-      <room-desc-frame></room-desc-frame>
+      <room-desc-frame v-bind:facilities="room.facilities" v-bind:description="room.description"></room-desc-frame>
       <review-set-frame></review-set-frame>
-      <map-frame></map-frame>
+      <map-frame v-bind:location="room.location"></map-frame>
     </div>
     <div class="right" style="display:inline-block">
       <host-frame></host-frame>
-      <room-book-frame></room-book-frame>
+      <room-book-frame v-bind:_id="$route.params.id" v-bind:price="room.price"></room-book-frame>
     </div>
   </div>
 </div>
