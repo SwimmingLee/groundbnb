@@ -14,6 +14,32 @@
     },
     {
         "sharehouse_id": "5ddf222c4e8135748c512873",
+        "user_id": "swimming",
+        "title": "집 아주 좋습니다",
+        "content": "만족합니다",
+        "updatedTime": 1,
+
+        "userRating": 5,
+        "comment":{
+            "content" : "동의합니다",
+            "publisher" :  "명륜진사갈비"
+        }       
+    },
+    {
+        "sharehouse_id": "5ddf222c4e8135748c512873",
+        "user_id": "swimming",
+        "title": "집 아주 좋습니다",
+        "content": "만족합니다",
+        "updatedTime": 1,
+
+        "userRating": 3,
+        "comment":{
+            "content" : "동의합니다",
+            "publisher" :  "명륜진사갈비"
+        }       
+    },
+    {
+        "sharehouse_id": "5ddf222c4e8135748c512873",
         "user_id": "swimming1",
         "title": "별룬데요",
         "content": "냄새나요 집에서",
@@ -48,6 +74,58 @@
         "userRating": 5,
         "comment":{
             "content" : "알바네",
+            "publisher" : "지나가던행인1"
+        }       
+    },
+    {
+        "sharehouse_id": "5ddf222c4e8135748c512874",
+        "user_id": "swimming3",
+        "title": "내인생 최고의 집",
+        "content": "ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ.",
+        "updatedTime":4,
+
+        "userRating": 5,
+        "comment":{
+            "content" : "알바네",
+            "publisher" : "지나가던행인1"
+        }       
+    },
+    {
+        "sharehouse_id": "5ddf222c4e8135748c512874",
+        "user_id": "swimming3",
+        "title": "내인생 최악의 집",
+        "content": "ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ.",
+        "updatedTime":4,
+
+        "userRating": 1,
+        "comment":{
+            "content" : "ㅇㅈ이네",
+            "publisher" : "지나가던행인1"
+        }       
+    },
+    {
+        "sharehouse_id": "5ddf222c4e8135748c512874",
+        "user_id": "swimming3",
+        "title": "내인생 최악의 집",
+        "content": "ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ.",
+        "updatedTime":4,
+
+        "userRating": 1,
+        "comment":{
+            "content" : "ㅇㅈ이네",
+            "publisher" : "지나가던행인1"
+        }       
+    },
+    {
+        "sharehouse_id": "5ddf222c4e8135748c512874",
+        "user_id": "swimming3",
+        "title": "내인생 최악의 집",
+        "content": "ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ.",
+        "updatedTime":4,
+
+        "userRating": 1,
+        "comment":{
+            "content" : "ㅇㅈ이네",
             "publisher" : "지나가던행인1"
         }       
     },
