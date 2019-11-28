@@ -12,7 +12,7 @@
             <h3>부정적인 리뷰</h3>
             <ul style="list-style:none;padding-left:0px;">
                     <li v-for="item in items" :key="item">
-                    <review-frame ></review-frame>
+                    <review-frame></review-frame>
                     </li>
                 </ul>
         </div>
@@ -28,7 +28,7 @@ export default {
     },
     data() {
         var arrNumber = new Array();
-        for (var i =0 ; i<100; i++)
+        for (var i =0 ; i<10; i++)
         arrNumber[i] =i;
         return {items:arrNumber};
     }

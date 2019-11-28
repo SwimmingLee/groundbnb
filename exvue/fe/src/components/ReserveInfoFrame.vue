@@ -1,40 +1,42 @@
 <template>
     <div>
-        <div class="houseInfo">
+        <v-container>
+            <v-row>
             <h3>숙소 정보</h3>
-                <div style="display:inline-block; width:50%">
+            </v-row>
+            <v-row>
+                <v-col>
                     <v-img src="https://a0.muscache.com/im/pictures/56bff280-aba3-42f3-af42-adc2814a72f4.jpg?aki_policy=large"
                             width = 200>
                     </v-img>
-                </div>
-                <div style="display:inline-block; width:50%">
+                </v-col>
+                <v-col>
                     XXX하우스
                     <br>서울시 마포구
                     <br>별이 다섯개
                     <br>원래 여기도 프레임화해야되는데
                     <br>
-                </div>
-        </div>
-            
-            
-        
+                </v-col>
+        </v-row>
         <v-divider></v-divider>
-        <div class="reserveInfo">
+        <v-row>
             <h3>이용 정보</h3>
-             <div class="schedule">
+        </v-row>
+        <v-row>
+            <div class="schedule">
                 <div style="display:inline-block">
-                    체크인
-                    <v-input
-                        :messages="['YYYYMMDD']"></v-input>
-                    </div>
-                    <div style="display:inline-block">
-                    체크아웃
-                    <v-input
-                        :messages="['YYYYMMDD']"></v-input>
-                    </div>
+                    체크인 
+                    <v-input>{{date}}</v-input>
                 </div>
-
-                <div class="passenger">
+                <div style="display:inline-block">
+                체크아웃
+                <v-input
+                    :messages="['YYYYMMDD']"></v-input>
+                </div>
+            </div>
+        </v-row>
+        <v-row>
+            <div class="passenger">
                     <div style="display:inline-block">
                     성인
                     <v-input
@@ -45,18 +47,27 @@
                     <v-input
                         :messages="['YYYYMMDD']"></v-input>
                     </div>
-                </div>
-        </div>
-
+                    <div style="display:inline-block">
+                    영유아
+                    <v-input
+                        :messages="['YYYYMMDD']"></v-input>
+                    </div>
+            </div>
+        </v-row>
         <v-divider></v-divider>
-        <div class="priceInfo">
+        <v-row>
             <h3>요금 정보</h3>
+        </v-row>
+        <v-row>
             숙박비
             <br>청소비
             <br>수수료
-            <v-divider></v-divider>
-            총 합계
-        </div>
+    
+            
+        </v-row>
+        <v-divider></v-divider>
+        <v-row>총 합계</v-row>
+        </v-container>
     </div>
 </template>
 
@@ -68,7 +79,17 @@ export default {
     conponents :{
         HostFrameMini,
         HostFrame,
-    }
+    },
+    data() {
+        return {
+
+        }
+    },
+    computed: {
+        date() {
+            return this.$store.state.trip;
+        }
+    },
 };
 </script>
 

@@ -4,11 +4,18 @@
         
         <div class="searchInput">
             <div class="destination">
-            목적지
-            <v-input
-                :messages="['목적지를 입력하세요']"></v-input>
+            <h3>목적지</h3>
+            <v-text-field label="목적지를 입력하세요"
+                        style="width:200"
+                        single-line></v-text-field>
+            
             </div>
-
+            <div>
+                <a v-bind:href="/search/">
+                    <v-btn>검색</v-btn>
+                </a>
+            </div>
+            <!--
             <div class="schedule">
                 <div style="display:inline-block">
                     체크인
@@ -34,9 +41,7 @@
                     :messages="['YYYYMMDD']"></v-input>
                 </div>
             </div>
-        </div>
-        <div class="searchButton">
-            <v-btn >검색</v-btn>
+            -->
         </div>
     </div>
 </template>

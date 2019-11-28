@@ -9,7 +9,9 @@
         
         <div class="searchButton">
             지금 예약하시면 20000원/1일 부터~
+            <a v-bind:href="/reserve/">
             <v-btn >예약</v-btn>
+            </a>
         </div>
     </div>
 </template>

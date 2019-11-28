@@ -12,7 +12,7 @@
                     2019년 11월 11일
                 </div>
                 <div class="reviewStar">
-                    별이 <b>다섯</b>개!
+                    <v-icon v-for="index in rating" :key="index" color="warning">mdi-star</v-icon>
                 </div>
             </div>
 
@@ -20,12 +20,22 @@
         <div class="reviewBody">
             증말 최고의 집이라고 말할수잇는 부분이구요. 다시 태어나도 다시 오고 싶은 집입니다.
         </div>
+        <comment-popup-frame></comment-popup-frame>
+
+
     </div>
 </template>
 
 <script>
+import CommentPopupFrame from '@/components/CommentPopupFrame';
 export default {
-    name : "ReviewFrame"
+    name : "ReviewFrame",
+    components:{
+        CommentPopupFrame
+    },
+    data() {
+        return{rating:5}
+    }
 };
 </script>
 

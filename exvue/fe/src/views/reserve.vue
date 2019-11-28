@@ -3,23 +3,34 @@
         <div>
             <stepper-frame></stepper-frame>
         </div>
-        <div style="float:left;width=50%">
-            이쪽은 stepper에 따라 바뀌는 sub부분
-        </div>
-        <div style="float:right;width=50%">
-            <reserve-info-frame></reserve-info-frame>
-        </div>
+        <v-container>
+            <v-row>
+                <v-col>
+                    <reserve-sub-frame></reserve-sub-frame>
+                </v-col>
+                <v-col>
+                    <reserve-info-frame></reserve-info-frame>
+                </v-col>
+            </v-row>
+            <v-row style="float:right">
+                <a v-bind:href="'/reserve' + '/complete/'">
+                <v-btn>예약하기!</v-btn>
+                </a>
+            </v-row>
+        </v-container>
     </div>
 </template>
 
 <script>
 import StepperFrame from '@/components/StepperFrame';
 import ReserveInfoFrame from '@/components/ReserveInfoFrame';
+import ReserveSubFrame from '@/components/ReserveSubFrame';
 export default {
     name : 'reserve',
     components:{
         StepperFrame,
         ReserveInfoFrame,
+        ReserveSubFrame
     }
 };
 </script>
