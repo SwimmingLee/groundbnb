@@ -35,3 +35,22 @@ exports.updateReview = function(req, res) {
         }
     )
 }
+
+exports.importdummy = (req, res) => {
+    try {
+        const path = './dummy_review.json'
+        const jsonString = fs.readFileSync(path)
+        const customer = JSON.parse(jsonString)
+        //console.log(customer)
+        for (var idx in customer){
+            console.log(customer[idx]);
+            review = new ReviewModel(customer[idx]);
+            review.save( function(err, data) {
+                if(err) return res.json(err);
+            })
+        }
+      } catch(err) {
+        console.log(err)
+        return res.json(err);
+      }
+}
