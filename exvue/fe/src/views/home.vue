@@ -8,7 +8,7 @@
         height=300px;>
       <ul style="list-sylte:none;padding-left:0px;">
         <li v-for="item in houseImgs" :key="item" style="float:left">
-          <room-frame v-bind:_id=item._id v-bind:src="item.image[0]" v-bind:detail="item.description"></room-frame>
+          <room-frame v-bind:_id=item._id v-bind:src="item.image[0]" v-bind:detail="item.description" v-bind:item="item"></room-frame>
         </li>
       </ul>
 

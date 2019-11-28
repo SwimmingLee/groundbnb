@@ -7,7 +7,7 @@
             </v-img>
         </div>
         <div class="roomDesc">
-            <h2>방의 이름입니다</h2>
+            <h2>{{item.title}}</h2>
             {{detail}}
         </div>
         <div style="display:inline-block">
@@ -21,7 +21,7 @@
 <script>
 export default {
     name : "RoomFrame",
-    props: ['src', 'detail', '_id']
+    props: ['src', 'detail', '_id','item']
 };
 </script>
 

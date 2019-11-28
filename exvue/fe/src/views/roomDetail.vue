@@ -2,7 +2,7 @@
   <div>
     <div class="roomInfo">
       {{room}}
-      <h1>{{room.description}}</h1>
+      <h1>{{room.title}}</h1>
       {{room.location.address}}
       <p><v-icon color="warning">mdi-star</v-icon>{{room.comment.userRating}}</p>
     <div class="roomPic" >
