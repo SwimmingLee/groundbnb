@@ -12,17 +12,14 @@
                 </v-row>
                 <v-row>
                     <v-text-field  label=passwordcheck>
-                        passwordcheck
                     </v-text-field>
                 </v-row>
                 <v-row>
                     <v-text-field  label="이름">
-                        이름
                     </v-text-field>
                 </v-row>
                 <v-row>
-                    <v-text-field>
-                        닉네임
+                    <v-text-field  label="닉네임">
                     </v-text-field>
                 </v-row>
                 <v-row>

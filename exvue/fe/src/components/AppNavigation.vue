@@ -10,7 +10,7 @@
             <v-btn flat>SIGN IN</v-btn>
             </a>
             <a v-bind:href="'/signup'">
-            <v-btn color="brown lighten-3">JOIN</v-btn>
+            <v-btn color="brown lighten-3">SIGN UP</v-btn>
             </a>
     </v-toolbar>
 </template>

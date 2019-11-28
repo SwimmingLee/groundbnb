@@ -1,7 +1,9 @@
 <template>
      <div>
         <div>
-            <v-input>검색할 지역을 넣어주세요</v-input>
+             <v-text-field style="width:300"
+            label="검색할 지역을 넣어주세요">
+            </v-text-field>
             <v-btn>검색</v-btn>
         </div>
         <div>
