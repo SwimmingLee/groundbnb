@@ -1,6 +1,6 @@
 <template>
     <div align="center">
-        <h1>예약이 완료되었습니다잉</h1>
+        <h1>예약이 완료되었습니다</h1>
     </div>
 </template>
 
