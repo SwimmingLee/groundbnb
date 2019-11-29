@@ -9,7 +9,7 @@
             </v-row>
             <v-row>
                 <span>PASSWORD</span>
-                <v-text-field v-model="userPWD">
+                <v-text-field v-model="userPWD" type="password">
                     password
                 </v-text-field>
             </v-row>
