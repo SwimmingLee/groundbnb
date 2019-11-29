@@ -1,0 +1,98 @@
+[
+    {
+        "image": "https://a0.muscache.com/im/pictures/15273358/d7329e9a_original.jpg?aki_policy=xx_large",
+        "title": "아주 좋은 방",
+        "price": 12000,
+        "personCapa": 6,
+        "description": "welcom to the my house",
+        "rule": "no rule",
+        "facilities": {
+            "roomCnt": 2,
+            "bathCnt": 1,
+            "bedCnt": 4,
+            "kitchenCnt": 2,
+            "etc": "etc"
+        },
+        "location": {
+            "latitude": 36.123457,
+            "longitude": 126.123485,
+            "address": "서울특별시"
+        },
+        "comment": {
+            "userRating": 5.2,
+            "reviewCnt": 0
+        }
+    },
+    {
+        "image":"https://a0.muscache.com/im/pictures/812e040f-6f6f-4cae-ad67-66c050b57c1f.jpg?aki_policy=xx_large",
+        "price": 15000,
+        "title": "필리핀 전망 좋은 방",
+        "personCapa": 2,
+        "description": "welcom to the my house",
+        "rule": "no rule",
+        "facilities": {
+            "roomCnt": 3,
+            "bathCnt": 3,
+            "bedCnt": 4,
+            "kitchenCnt": 2,
+            "etc": "etc"
+        },
+        "location": {
+            "latitude": 36.123457,
+            "longitude": 126.123485,
+            "address": "서울특별시"
+        },
+        "comment": {
+            "userRating": 5.2,
+            "reviewCnt": 0
+        }
+    },
+    {
+        "image":"https://a0.muscache.com/im/pictures/1650882c-9c32-4375-a27d-548424739c57.jpg?aki_policy=xx_large",
+        "price": 10000,
+        "title": "아늑한 3층",
+        "personCapa": 6,
+        "description": "welcom to the my house",
+        "rule": "no rule",
+        "facilities": {
+            "roomCnt": 2,
+            "bathCnt": 1,
+            "bedCnt": 4,
+            "kitchenCnt": 2,
+            "etc": "etc"
+        },
+        "location": {
+            "latitude": 36.123457,
+            "longitude": 126.123485,
+            "address": "서울특별시"
+        },
+        "comment": {
+            "userRating": 5.2,
+            "reviewCnt": 0
+        }
+    },
+    {
+        "image":"https://a0.muscache.com/im/pictures/106791885/477f8fd0_original.jpg?aki_policy=xx_large",
+        "price": 12130,
+        "title": "화산이 보이는 집",
+        "personCapa": 6,
+        "description": "welcom to the my house",
+        "rule": "no rule",
+        "facilities": {
+            "roomCnt": 2,
+            "bathCnt": 1,
+            "bedCnt": 4,
+            "kitchenCnt": 2,
+            "etc": "etc"
+        },
+        "location": {
+            "latitude": 36.123457,
+            "longitude": 126.123485,
+            "address": "서울특별시"
+        },
+        "comment": {
+            "userRating": 5.2,
+            "reviewCnt": 0
+        }
+    }
+]

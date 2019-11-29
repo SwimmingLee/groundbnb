@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to div title
+  form(action="/api/image" method="POST" enctype="multipart/form-data")
+    label(for="image file") Image File
+    input(type="file" name="image")
+    input(type="text" name="sharehouseId")
+    input(type="submit" value="Upload")

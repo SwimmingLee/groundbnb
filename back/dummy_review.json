@@ -1,0 +1,65 @@
+[
+    {
+        "sharehouse_id": "5ddf222c4e8135748c512873",
+        "user_id": "5ddf20d76b308e2db0573965",
+        "title": "집 아주 좋습니다",
+        "content": "만족합니다",
+        "updatedTime": 1,
+        "userRating": 4,
+        "comment":{
+            "content" : "동의합니다",
+            "publisher" :  "명륜진사갈비"
+        }       
+    },
+    {
+        "sharehouse_id": "5ddf222c4e8135748c512873",
+        "user_id": "5ddf20d76b308e2db0573965",
+        "title": "별룬데요",
+        "content": "냄새나요 집에서",
+        "updatedTime":2,
+
+        "userRating": 2,
+        "comment":{
+            "content" : "거짓말",
+            "publisher" : "집주인아님"
+        }       
+    },
+    {
+        "sharehouse_id": "5ddf222c4e8135748c512873",
+        "user_id": "5ddf20d76b308e2db0573965",
+        "title": "넓고 좋네요",
+        "content": "넓어서 집에서 길 잃어버릴뻔 했습니다.",
+        "updatedTime":3,
+
+        "userRating": 5,
+        "comment":{
+            "content" : "ㅇㄱㄹㅇ",
+            "publisher" : "급식급식"
+        }       
+    },
+    {
+        "sharehouse_id": "5ddf222c4e8135748c512874",
+        "user_id": "5ddf20d76b308e2db0573965",
+        "title": "내인생 최고의 집",
+        "content": "ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ.",
+        "updatedTime":4,
+        "userRating": 5,
+        "comment":{
+            "content" : "알바네",
+            "publisher" : "지나가던행인1"
+        }       
+    },
+    {
+        "sharehouse_id": "5ddf222c4e8135748c512875",
+        "user_id": "5ddf20d76b308e2db0573965",
+        "title": "진짜 돈받고 살아야되는 집입니다",
+        "content": "구데기에요 이거",
+        "updatedTime":5,
+
+        "userRating": 1,
+        "comment":{
+            "content" : "안녕하십니까. 주인입니다. 돈 줄테니 저희집 오세요",
+            "publisher" : "주인"
+        }       
+    }
+]

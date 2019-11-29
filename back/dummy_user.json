@@ -1,0 +1,102 @@
+[
+    {
+        "userId":"swimming",
+        "userPwd":"cjsdks2",
+        "userThumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYuAY_j51ueICSsz_F06EOm4ouV87nKWr_-bmllo7js9vFckVa&s",
+        "nickName":"스위밍",
+        "age":26,
+        "email":"swimming_7291@daum.net",
+        "address":"천안시",
+        "introduction":"저는 호스트입니다."
+    },
+    {
+        "userId":"swimming1",
+        "userPwd":"cjsdks2",
+        "userThumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3Ec1-mBOnxbtgoPpCePt56o4s7Yhp6GPjyKfk6hy_8tMGV7wag&s",
+        "nickName":"이수영",
+        "age":26,
+        "email":"swimming_7291@daum.net",
+        "address":"천안시",
+        "introduction":"저는 호스트입니다."
+    },
+    {
+        "userId":"swimming2",
+        "userPwd":"cjsdks2",
+        "userThumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB9w41qx9PTeh2llypghRC8szCtx2TtGRKooaWrRPNKsNMY-yuLw&s",
+        "nickName":"김명수",
+        "age":26,
+        "email":"swimming_7291@daum.net",
+        "address":"천안시",
+        "introduction":"저는 호스트입니다."
+    },
+    {
+        "userId":"swimming3",
+        "userPwd":"cjsdks2",
+        "userThumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtc1G-gmHoH0xmY320QmY__2s0BmSFo1AyIePLeyiW4VYEcQ4k&s",
+        "nickName":"장현진",
+        "age":26,
+        "email":"swimming_7291@daum.net",
+        "address":"천안시",
+        "introduction":"저는 호스트입니다."
+    },
+    {
+        "userId":"swimming4",
+        "userPwd":"cjsdks2",
+        "userThumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi4Ne-GXJRGIwLPSZN4umAh6PhKfanzV4V-euyOw-wXG28Eon8&s",
+        "nickName":"홍석준",
+        "age":26,
+        "email":"swimming_7291@daum.net",
+        "address":"천안시",
+        "introduction":"저는 호스트입니다."
+    },
+    {
+        "userId":"swimming5",
+        "userPwd":"cjsdks2",
+        "userThumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYuAY_j51ueICSsz_F06EOm4ouV87nKWr_-bmllo7js9vFckVa&s",
+        "nickName":"보규보규",
+        "age":26,
+        "email":"swimming_7291@daum.net",
+        "address":"천안시",
+        "introduction":"저는 호스트입니다."
+    },
+    {
+        "userId":"swimming6",
+        "userPwd":"cjsdks2",
+        "userThumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYuAY_j51ueICSsz_F06EOm4ouV87nKWr_-bmllo7js9vFckVa&s",
+        "nickName":"현철이형",
+        "age":26,
+        "email":"swimming_7291@daum.net",
+        "address":"천안시",
+        "introduction":"저는 호스트입니다."
+    },
+    {
+        "userId":"swimming7",
+        "userPwd":"cjsdks2",
+        "userThumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYuAY_j51ueICSsz_F06EOm4ouV87nKWr_-bmllo7js9vFckVa&s",
+        "nickName":"윤찬희",
+        "age":26,
+        "email":"swimming_7291@daum.net",
+        "address":"천안시",
+        "introduction":"저는 호스트입니다."
+    },
+    {
+        "userId":"swimming8",
+        "userPwd":"cjsdks2",
+        "userThumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYuAY_j51ueICSsz_F06EOm4ouV87nKWr_-bmllo7js9vFckVa&s",
+        "nickName":"정진호",
+        "age":26,
+        "email":"swimming_7291@daum.net",
+        "address":"천안시",
+        "introduction":"저는 호스트입니다."
+    },
+    {
+        "userId":"swimming9",
+        "userPwd":"cjsdks2",
+        "userThumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYuAY_j51ueICSsz_F06EOm4ouV87nKWr_-bmllo7js9vFckVa&s",
+        "nickName":"대직스트라",
+        "age":26,
+        "email":"swimming_7291@daum.net",
+        "address":"천안시",
+        "introduction":"저는 호스트입니다."
+    }
+]
